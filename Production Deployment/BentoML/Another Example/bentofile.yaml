@@ -1,0 +1,10 @@
+service: 'service.py:service'
+labels:
+  owner:bentoml-team
+  project:gallery
+include:
+- '*.py'
+python:
+  packages:
+  - scikit-learn
+  - pandas
