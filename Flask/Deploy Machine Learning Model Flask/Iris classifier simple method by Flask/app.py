@@ -23,10 +23,9 @@ def predict():
             float(request.form['petal_width'])
         ]
     prediction = model.predict([data])
-    species = ['setosa','versicolor','virginica']
-    result = species[prediction[0]]
-    
+    species    = ['setosa','versicolor','virginica']
+    result     = species[prediction[0]]
     return render_template('index.html',prediction_text=f'Iris flower is predicted to be {result}')
 
-if __name__=='__main__':
+if __name__ == '__main__':
     app.run(debug=True)
