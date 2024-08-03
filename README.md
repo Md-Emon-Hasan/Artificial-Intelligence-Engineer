@@ -2,6 +2,8 @@
 
 Welcome to the **Artificial Intelligence Engineer** repository! This repository is dedicated to exploring and implementing artificial intelligence (AI) techniques, algorithms, and applications. Whether you're a novice or an experienced AI enthusiast, here you'll find tutorials, projects, and resources to delve deeper into the world of artificial intelligence.
 
+![Screenshot 2024-08-03 at 18-12-24 0_dVt_rPPjc2EbQTGD_-1 png (PNG Image 960 × 480 pixels)](https://github.com/user-attachments/assets/3b52bcde-0c38-48be-bff7-5e6d9be2fc63)
+
 ## 📋 Contents
 
 - [Introduction](#introduction)
