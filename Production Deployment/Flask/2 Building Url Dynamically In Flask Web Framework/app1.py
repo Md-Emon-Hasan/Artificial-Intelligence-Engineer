@@ -24,7 +24,7 @@ def results(marks):
         results='fail'
     else:
         results='sucess'
-    return redirect(url_for(results,score=marks))  
-        
+    return redirect(url_for(results,score=marks))
+
 if __name__=='__main__':
     app.run(debug=True)

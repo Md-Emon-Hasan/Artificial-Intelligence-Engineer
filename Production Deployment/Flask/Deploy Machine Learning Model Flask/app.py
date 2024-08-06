@@ -8,7 +8,7 @@ import numpy as np
 app = Flask(__name__)
 
 # load the model
-model = joblib.load('C:/Users/emon1/OneDrive/Desktop/AI Engineer/Flask/Deploy Machine Learning Model Flask/Iris classifier simple method by Flask/iris_model.pkl')
+model = joblib.load('C:/Users/emon1/OneDrive/Desktop/AI Engineer/Production Deployment/Flask/Deploy Machine Learning Model Flask/iris_model.pkl')
 
 @app.route('/')
 def home():
