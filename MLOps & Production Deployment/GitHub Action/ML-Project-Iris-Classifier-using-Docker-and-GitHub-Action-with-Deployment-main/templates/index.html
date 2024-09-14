@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Classification</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1><i class="fas fa-flower"></i>Iris Flower Classification</h1>
+        <h1 class='md'><a href="https://github.com/Md-Emon-Hasan">Made by Md Emon Hasan</a></h1>
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <label for="sepal_length">Sepal Length</label>
+                <input type="text" class="form-control" id="sepal_length" name="sepal_length" placeholder="Enter Sepal Length" required>
+            </div>
+            <div class="form-group">
+                <label for="sepal_width">Sepal Width</label>
+                <input type="text" class="form-control" id="sepal_width" name="sepal_width" placeholder="Enter Sepal Width" required>
+            </div>
+            <div class="form-group">
+                <label for="petal_length">Petal Length</label>
+                <input type="text" class="form-control" id="petal_length" name="petal_length" placeholder="Enter Petal Length" required>
+            </div>
+            <div class="form-group">
+                <label for="petal_width">Petal Width</label>
+                <input type="text" class="form-control" id="petal_width" name="petal_width" placeholder="Enter Petal Width" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+
+        <div class="footer">
+            <p>Developed by <a href="https://github.com/Md-Emon-Hasan">Md Emon Hasan</a> | &copy; 2024 All Rights Reserved</p>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</html>
